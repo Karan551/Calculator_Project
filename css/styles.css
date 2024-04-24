@@ -38,6 +38,9 @@ html {
     margin: 0 0.75rem;
     line-height: 2;
 }
+.mt-2{
+    margin-top: 0.5rem;
+}
 
 .pl-4 {
     padding-left: 1rem;
