@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="" />
+
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="theme-section">
+        <h1 class="pl-4">calc</h1>
+        <div class="theme-toggle">
+          <h3 class="text-upper mx-2">Theme</h3>
+          <div class="input-wrapper">
+            <input type="radio" checked name="theme" id="theme-1" value="0" />
+            <label for="theme-1" class="theme-1">1</label>
+
+            <input type="radio" name="theme" id="theme-2" value="1" />
+            <label for="theme-2" class="theme-2">2</label>
+
+            <input type="radio" name="theme" id="theme-3" value="2" />
+            <label for="theme-3" class="theme-3">3</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-field">
+        <input
+          clas="num-input"
+          type="text"
+          name="num-input"
+          id="num-input"
+          value=""
+          readonly
+        />
+      </div>
+      <div class="button-field grid-container">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="delete-num">DEL</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+        <button>.</button>
+        <button>0</button>
+        <button>/</button>
+        <button>x</button>
+        <button class="reset item-1">RESET</button>
+        <button class="result item-2">=</button>
+      </div>
+    </main>
+
+    <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. 
+  
+  </div>
+  --></body>
+</html>

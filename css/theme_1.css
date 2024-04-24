@@ -1,0 +1,111 @@
+/* 
+- Dark moderate cyan (key background): hsl(185, 42%, 37%)
+- Very dark cyan (key shadow): hsl(185, 58%, 25%)
+
+- Orange (key background, toggle): hsl(25, 98%, 40%)
+- Dark orange (key shadow): hsl(25, 99%, 27%)
+
+- Light grayish yellow (key background): hsl(45, 7%, 89%)
+- Dark grayish orange (key shadow): hsl(35, 11%, 61%)
+
+#### Text
+
+- Very dark grayish yellow: hsl(60, 10%, 19%)
+- White (text): hsl(0, 0%, 100%)
+
+*/
+:root {
+    --main-background: hsl(0, 0%, 90%);
+    --keypad-background: hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+    /* reset and del button background and shadow */
+    --bg-del-reset-key: hsl(185, 42%, 37%);
+    --del-reset-key-shadow: hsl(185, 58%, 25%);
+    /* result btn shadow and background */
+    --bg-result-key: hsl(25, 98%, 40%);
+    --shadow-result-key: hsl(25, 99%, 27%);
+    /* key result and shadow */
+    --bg-keys: hsl(30, 25%, 89%);
+    --keys-shadow: hsl(28, 16%, 65%);
+    /* keys color and shadow */
+    --keys-white-color: hsl(0, 0%, 100%);
+    --keys-dark-color: hsl(60, 10%, 19%);
+
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--keys-dark-color);
+}
+
+
+.input-wrapper {
+    background-color: var(--keys-shadow);
+
+}
+
+.input-wrapper:hover {
+    cursor: pointer;
+}
+
+.input-field input {
+    background-color: var(--screen-background);
+    border: none;
+    color: var(--keys-dark-color);
+}
+
+
+
+.button-field {
+    border: 1px solid var(--keypad-background);
+    background-color: var(--keypad-background);
+
+}
+
+
+.button-field>button {
+    background-color: var(--bg-keys);
+    color: var(--keys-dark-color);
+    box-shadow: 0 8px var(--keys-shadow);
+}
+
+
+button-field>button:active {
+    transform: translateY(4px);
+    background-color: hsl(0deg 0% 100% / 96%);
+}
+
+/* Delete and Reset Button */
+button.delete-num,
+button.reset {
+    background-color: var(--bg-del-reset-key);
+    box-shadow: 0 8px var(--del-reset-key-shadow);
+    color: var(--keys-white-color);
+}
+
+button.delete-num:active,
+button.reset:active {
+    background-color: hsl(185, 42%, 50%);
+    color: hsla(0, 0%, 100%, 0.85);
+}
+
+/* Result Button Css */
+button.result {
+    background-color: var(--bg-result-key);
+    box-shadow: 0 8px var(--shadow-result-key);
+    color: var(--keys-white-color);
+}
+
+button.result:active {
+    background-color: hsla(6, 63%, 70%, 0.8);
+}
+
+
+input[type="radio"] {
+    accent-color: var(--bg-result-key);
+}
+
+input[type="radio"]:hover,
+input[type="radio"]:active {
+    cursor: pointer;
+}
