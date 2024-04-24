@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Karan551/Calculator_Project/tree/main/calculator-app-main)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/Karan551/Calculator_Project)
+- Live Site URL: [Live site URL here](https://karan551.github.io/Calculator_Project/)
 
 ## My process
 
@@ -103,8 +103,8 @@ function updateTheme(index) {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - This helped me very much. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://javascript.info/dom-nodes) - This is an amazing article which helped me finally understand DOM Tree. I'd recommend it to anyone still learning this concept.
 
 
 
